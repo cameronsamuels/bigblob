@@ -1,0 +1,248 @@
+/*
+	Cameron Samuels
+	AP Computer Science Principles
+	Create Performance Task
+	Ms. Felicia Castillo
+	March - May, 2022
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, sans-serif;
+	background: #F5D7E3;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+
+header {
+	padding: 20px 0;
+	background: #3B429F;
+	color: #F5D7E3;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 250%;
+}
+
+
+
+#js-input {
+	margin: 30px 0;
+	text-align: center;
+}
+
+#js-input h2 {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50vw;
+	margin: 0;
+	padding: 10px 0;
+	background: #F4A5AE;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#js-textinput {
+	box-sizing: border-box;
+	display: block;
+	width: 50vw;
+	min-width: 350px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 3px #F4A5AE solid;
+	border-top: 0;
+	outline: 0;
+}
+
+
+
+#js-output {
+	text-align: center;
+}
+
+#js-output h2 {
+	box-sizing: border-box;
+	display: inline-block;
+	background: #F4A5AE;
+	color: #000;
+	width: 50vw;
+	margin: 0;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+#js-output>div {
+	padding: 20px 0;
+}
+
+
+
+/* Tables */
+.js-datatable {
+	display: inline-block;
+	border: 1px #000 solid;
+	vertical-align: middle;
+	margin: 25px 5px;
+	overflow: auto;
+    max-height: 200px;
+}
+
+.js-datatable thead>:first-child {
+	font-weight: bold;
+	background: #AA7DCE;
+	color: #FFE7F3;
+}
+
+.js-datatable thead>:nth-child(2) {
+	text-decoration: underline;
+}
+
+.js-datatable td {
+	padding: 3px;
+	border: 1px #000 solid;
+}
+
+
+
+/* Graphs & Charts */
+.js-dotplot,
+.js-barchart {
+	position: relative;
+	display: inline-block;
+	margin: 15px;
+	padding: 15px 15px 2px 2px;
+	border: 2px #000 solid;
+	border-top: 0;
+	border-right: 0;
+}
+
+.js-dotplot>div,
+.js-barchart>div {
+	display: inline-block;
+}
+
+.js-barchart>div {
+	margin: 0 5px;
+}
+
+.js-dotplot>div>div {
+	width: 5px;
+	height: 5px;
+	background: #000;
+}
+
+.js-barchart>div>div {
+	width: 5px;
+	height: 10px;
+	border: 3px #000 solid;
+	border-bottom: 0;
+}
+
+.js-barchart>div>div:not(:first-child) {
+	border-top: 0;
+}
+
+.js-dotplot>div>div {
+	margin: 5px;
+}
+
+.js-dotplot>span,
+.js-barchart>span {
+	position: absolute;
+	bottom: -20px;
+	border: 0;
+	background: 0;
+}
+
+.js-dotplot>span span,
+.js-barchart>span span {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 60%;
+}
+
+.js-dotplot>span span {
+	width: 15px;
+}
+
+.js-barchart>span span {
+	width: 21px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+
+/* Box plot */
+.js-boxplot {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 10px 0;
+	border: 1px #000 solid;
+	text-align: left;
+}
+
+.js-boxplot>span {
+	position: relative;
+	display: block;
+	height: 20px;
+	padding-top: 10px;
+}
+
+.js-boxplot>span>span {
+	position: absolute;
+	display: inline-block;
+	font-size: 60%;
+}
+
+.js-boxplot-whiskers {
+	width: 300px;
+	margin-top: 10px;
+	height: 5px;
+	background: #000;
+}
+
+.js-boxplot-box {
+	box-sizing: border-box;
+	position: absolute;
+	/*top: calc(50% - 10px);*/
+	top: 13px;
+	height: 20px;
+	background: #F5D7E3;
+	border: 4px #000 solid;
+}
+
+.js-boxplot-median {
+	box-sizing: border-box;
+	position: absolute;
+	/*top: calc(50% - 10px);*/
+	top: 13px;
+	width: 4px;
+	height: 20px;
+	background: #000;
+}
+
+
+
+/* Other styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFE7F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #AA7DCE;
+}
